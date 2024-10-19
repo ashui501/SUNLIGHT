@@ -181,9 +181,9 @@ if __name__ == "__main__":
     t.daemon = True
     t.start()
 
-    LOGGER(__name__).info("Starting VIPBot...")
+    LOGGER(__name__).info("Starting SUNLIGHTBot...")
 
     # Run the bot
     asyncio.run(anony_boot())
 
-    LOGGER(__name__).info("Stopping VIPBot...")
+    LOGGER(__name__).info("Stopping SUNLIGHTBot...")
