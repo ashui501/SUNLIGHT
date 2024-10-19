@@ -18,7 +18,7 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int("your api id here")
+API_ID = int("23468511")
 
 API_HASH = "872d60743ce5f247a2c0a9e7fac17e1f"
 
@@ -28,7 +28,7 @@ BOT_TOKEN = "5418725646:AAEA6TssX7CKfXWMJpGOvYzLVO6eRFzMsOg"
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = "mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB_URI = "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"
 
 
 CLEANMODE_DELETE_MINS = int(
