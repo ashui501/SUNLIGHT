@@ -18,17 +18,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("23468511", ""))
 
-API_HASH = getenv("API_HASH")
+API_HASH = getenv("872d60743ce5f247a2c0a9e7fac17e1f")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = getenv("5418725646:AAEA6TssX7CKfXWMJpGOvYzLVO6eRFzMsOg")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = getenv("mongodb.net/?retryWrites=true&w=majority", None)
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -70,12 +70,12 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
+LOG_GROUP_ID = int(getenv("-1001550054357", ""))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "1808943146").split())
+    map(int, getenv("OWNER_ID", "7154103754").split())
 )  # Input type must be interger
 
 
@@ -87,10 +87,10 @@ PRIVACY_LINK = getenv(
 
 
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = getenv("HRKU-a0ad718f-4a20-4106-a597-848cca17c829")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = getenv("baby")
 
 
 # For customized or modified Repository
@@ -184,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", "False")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @VIPStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = getenv("BQFmGd8AANN-M_9XtlW1iPStWBvq4bhajGj3MRzVqKJUGnZHVCQXzENC-gBR3LOzmuZUseDJcXUhwbctnBhTjiLY5Fkyo8seooKVPckmj-39Kl3wRYMv9wiVI5i9o8yM342fYdPpGRdwoljE0-NgvVzDouKPVXqWk0J_ExQANmqI-H1lCAb0nuEaJvDAUqLNJhAXgoEOF7cdM08bxu72MhszP91mcNv5dUawpMcdm1UkSkIsgwuqr5haOcdb0ztvlj7gTnJXr1dT2ScR8O9QATFKEUX2fRp0wF4pDT8ZKKPTO4xa5BmjjzRDu35D6cNg0vo3Na1x0DrpgOkzuGTNO1wVSWBXBgAAAAGqavXKAA", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
