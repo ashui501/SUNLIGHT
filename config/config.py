@@ -18,17 +18,17 @@ load_dotenv()
 
 # Get it from my.telegram.org
 
-API_ID = int("23468511")
+API_ID = int(getenv("API_ID", ""))
 
-API_HASH = "872d60743ce5f247a2c0a9e7fac17e1f"
+API_HASH = getenv("API_HASH")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = "5418725646:AAEA6TssX7CKfXWMJpGOvYzLVO6eRFzMsOg"
+BOT_TOKEN = getenv("BOT_TOKEN")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = "mongodb+srv://Krishna:pss968048@cluster0.4rfuzro.mongodb.net/?retryWrites=true&w=majority"
+MONGO_DB_URI = getenv("MONGO_DB_URI", None)
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -53,7 +53,7 @@ EXTRA_PLUGINS = getenv(
 
 EXTRA_PLUGINS_REPO = getenv(
     "EXTRA_PLUGINS_REPO",
-    "https://github.com/MOON-CODES/Extra-Plugin",
+    "https://github.com/THE-VIP-BOY-OP/Extra-Plugin",
 )
 # Fill here the external plugins repo where plugins that you want to load
 
@@ -70,13 +70,14 @@ SONG_DOWNLOAD_DURATION = int(
 
 
 # You'll need a Private Group ID for this.
-LOG_GROUP_ID = int("-1001550054357")
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7154103754").split())
+    map(int, getenv("OWNER_ID", "1808943146").split())
 )  # Input type must be interger
+
 
 # make your bots privacy from telegra.ph and put your url here
 
@@ -86,16 +87,16 @@ PRIVACY_LINK = getenv(
 
 
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = "HRKU-a0ad718f-4a20-4106-a597-848cca17c829"
+HEROKU_API_KEY = getenv("HEROKU_API_KEY")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME", "baby")
+HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
 
 
 # For customized or modified Repository
 UPSTREAM_REPO = getenv(
     "UPSTREAM_REPO",
-    "https://github.com/MOON-CODES/SUNLIGHT",
+    "https://github.com/THE-VIP-BOY-OP/VIP-MUSIC",
 )
 UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
 
@@ -183,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", "False")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @VIPStringBot
-STRING1 = os.getenv("STRING_SESSION", "BQFmGd8AANN-M_9XtlW1iPStWBvq4bhajGj3MRzVqKJUGnZHVCQXzENC-gBR3LOzmuZUseDJcXUhwbctnBhTjiLY5Fkyo8seooKVPckmj-39Kl3wRYMv9wiVI5i9o8yM342fYdPpGRdwoljE0-NgvVzDouKPVXqWk0J_ExQANmqI-H1lCAb0nuEaJvDAUqLNJhAXgoEOF7cdM08bxu72MhszP91mcNv5dUawpMcdm1UkSkIsgwuqr5haOcdb0ztvlj7gTnJXr1dT2ScR8O9QATFKEUX2fRp0wF4pDT8ZKKPTO4xa5BmjjzRDu35D6cNg0vo3Na1x0DrpgOkzuGTNO1wVSWBXBgAAAAGqavXKAA")
+STRING1 = getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
