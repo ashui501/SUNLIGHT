@@ -78,7 +78,6 @@ OWNER_ID = list(
     map(int, getenv("OWNER_ID", "7154103754").split())
 )  # Input type must be interger
 
-
 # make your bots privacy from telegra.ph and put your url here
 
 PRIVACY_LINK = getenv(
