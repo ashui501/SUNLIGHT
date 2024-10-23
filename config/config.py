@@ -20,15 +20,15 @@ load_dotenv()
 
 API_ID = int(getenv("API_ID", ""))
 
-API_HASH = getenv("API_HASH")
+API_HASH = os.getenv("API_HASH")
 
 
 ## Get it from @Botfather in Telegram.
-BOT_TOKEN = getenv("BOT_TOKEN")
+BOT_TOKEN = os.getenv("BOT_TOKEN")
 
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
-MONGO_DB_URI = getenv("MONGO_DB_URI", None)
+MONGO_DB_URI = os.getenv("MONGO_DB_URI", None)
 
 
 CLEANMODE_DELETE_MINS = int(
@@ -43,7 +43,7 @@ DURATION_LIMIT_MIN = int(
 )  # Remember to give value in Minutes
 
 
-EXTRA_PLUGINS = getenv(
+EXTRA_PLUGINS = os.getenv(
     "EXTRA_PLUGINS",
     "True",
 )
@@ -51,7 +51,7 @@ EXTRA_PLUGINS = getenv(
 # Fill True if you want to load extra plugins
 
 
-EXTRA_PLUGINS_REPO = getenv(
+EXTRA_PLUGINS_REPO = os.getenv(
     "EXTRA_PLUGINS_REPO",
     "https://github.com/ashui501/Extra-Plugin",
 )
@@ -75,7 +75,7 @@ LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", ""))
 
 # Your User ID.
 OWNER_ID = list(
-    map(int, getenv("OWNER_ID", "7154103754").split())
+    map(int, os.getenv("OWNER_ID", "7154103754").split())
 )  # Input type must be interger
 
 
@@ -87,18 +87,18 @@ PRIVACY_LINK = getenv(
 
 
 # Get it from http://dashboard.heroku.com/account
-HEROKU_API_KEY = getenv("HEROKU_API_KEY")
+HEROKU_API_KEY = os.getenv("HEROKU_API_KEY")
 
 # You have to Enter the app name which you gave to identify your  Music Bot in Heroku.
-HEROKU_APP_NAME = getenv("HEROKU_APP_NAME")
+HEROKU_APP_NAME = os.getenv("HEROKU_APP_NAME")
 
 
 # For customized or modified Repository
-UPSTREAM_REPO = getenv(
+UPSTREAM_REPO = os.getenv(
     "UPSTREAM_REPO",
     "https://github.com/ashui501/SUNLIGHT",
 )
-UPSTREAM_BRANCH = getenv("UPSTREAM_BRANCH", "master")
+UPSTREAM_BRANCH = os.getenv("UPSTREAM_BRANCH", "master")
 
 # GIT TOKEN ( if your edited repo is private)
 GIT_TOKEN = getenv(
@@ -184,7 +184,7 @@ SET_CMDS = getenv("SET_CMDS", "False")
 
 
 # You'll need a Pyrogram String Session for these vars. Generate String from our session generator bot @VIPStringBot
-STRING1 = getenv("STRING_SESSION", None)
+STRING1 = os.getenv("STRING_SESSION", None)
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
